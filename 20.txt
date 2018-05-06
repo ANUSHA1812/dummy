@@ -1,0 +1,50 @@
+                            Palindrome.java
+Name:Nikunj Agarwal
+Sec:B
+Roll no.:34
+
+1 package geu;
+2
+3 import java.util.Scanner;
+4
+5 public class Palindrome
+6 {
+7 static int ctr=0;
+8 int i,n,num=0;
+9 static void palin(int n)
+10 {
+11 int res=0,rem;
+12 int temp = n;
+13 while(n > 0)
+14 {
+15 rem = n%10;
+16 res = res + rem;
+17 n = n/10;
+18 }
+19 if(res == temp)
+20 {
+21 ctr++;
+22 }
+23 }
+24 public static void main(String [] args)
+25 {
+26 Scanner sc = new Scanner(System.in);
+27 int array [] = new int [100];
+28 int i,n;
+29 System.out.println("Enter value of n");
+30 n = sc.nextInt();
+31 System.out.println("Enter elements of array");
+32 for(i= 0; i < n;i++)
+33 {
+34 array[i] = sc.nextInt();
+35 }
+36
+37 for(i= 0; i < n;i++)
+38 {
+39 palin(array[i]);
+40 }
+41 System.out.print(ctr);
+42 sc.close();
+43 }
+44 }
+45

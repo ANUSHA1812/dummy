@@ -1,0 +1,69 @@
+                          Array.java
+Name:Nikunj Agarwal
+Sec:B
+Roll no.:34
+
+1 package geu;
+3 import java.util.Scanner;
+4
+5 public class Array
+6 {
+7 public static void main(String args [])
+8 {
+9 Scanner sc = new Scanner(System.in);
+10 int i,j,m,n,rsum=0,csum=0;
+11 int arr[][] = new int [100][100];
+12 System.out.println("Enter value of m");
+13 m = sc.nextInt();
+14 System.out.println("Enter value of n");
+15 n = sc.nextInt();
+16 System.out.println("Enter elements of array");
+17 for(i=0; i<m ;i++)
+18 {
+19 for(j=0;j<n;j++)
+20 {
+21 arr[i][j] = sc.nextInt();
+22 }
+23 }
+24 i = 0;
+25 j = 0;
+26 for(j=0; j<n ;j++)
+27 {
+28 for(i=0;i<m;i++)
+29 {
+30 rsum = rsum + arr[i][j];
+31 }
+32 System.out.println("Cols " + rsum);
+33 rsum = 0;
+34 }
+35
+36 for(i=0; i<m ;i++)
+37 {
+38 for(j=0;j<n;j++)
+39 {
+40 csum = csum + arr[i][j];
+41
+42 }
+
+
+
+
+43 System.out.println("Rows " + csum);
+44 csum=0;
+45 }
+46 int dsum1 = 0, dsum2 = 0;
+47 for (i = 0; i < m; i++)
+48 {
+49 for (j = 0; j < n; j++)
+50 {
+51 if (i == j)
+52 dsum1 += arr[i][j];
+53
+54 if (i == n - j - 1)
+55 dsum2 += arr[i][j];
+56 }
+57 }
+58 System.out.println("Digonal sum 1: "+dsum1+"\nDigonal sum 2: "+dsum2: "+dsum2);
+59 sc.close();
+60 }
+61 }

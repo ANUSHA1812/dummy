@@ -1,0 +1,28 @@
+                              Driver.java
+
+Name:Nikunj Agarwal
+Sec:B
+Roll no.:34
+
+
+1 package geu;
+2
+3 public class Driver
+4 {
+5
+6 public static void main(String[] args)
+7 {
+8 System.out.println("Details of Programmer : ");
+9 Programmer p1=new Programmer(34, "NIKUNJ",40000,120, "Meerut");
+10
+11 p1.display();
+12 p1.show();
+13
+14 System.out.println("Details of Manager : ");
+15 Manager m=new Manager(116,"NIKUNJ",50000,999,"Meerut");
+16
+17 m.display();
+18 m.print();
+19 }
+20 }
+

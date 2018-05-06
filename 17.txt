@@ -1,0 +1,17 @@
+
+                             Interface.java
+
+Name:Nikunj Agarwal
+Sec:B
+Roll no.:34
+
+
+
+1 package geu;
+2
+3 public interface Interface
+4 {
+5 char grades();
+6 double percentage();
+7 }
+8

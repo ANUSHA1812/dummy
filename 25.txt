@@ -1,0 +1,26 @@
+
+                          Programmer.java
+Name:Nikunj Agarwal
+Sec:B
+Roll no.:34
+ 
+1 package geu; 
+2 
+3 public class Programmer extends Employees 
+4 { 
+5 int projId; 
+6 String projName; 
+7 public Programmer(int empId, String name, int salary,int projId,String projName) 
+8 { 
+9 super(empId, name, salary); 
+10 this.projId=projId; 
+11 this.projName=projName; 
+12 } 
+13 void show() 
+14 { 
+15 System.out.println("\nprogrammer details"); 
+16 System.out.println("projId : "+projId); 
+17 System.out.println("prjName : "+projName); 
+18 } 
+19 } 
+20 

@@ -1,0 +1,86 @@
+                              Stacks.java
+
+Name:Nikunj Agarwal
+Sec:B
+Roll no.:34
+
+
+1 package geu;
+2
+3 public class Stacks
+4 {
+5
+6 int size;
+7 int arr[];
+8 int top;
+9
+10 Stacks(int size)
+11 {
+12 this.size = size;
+13 this.arr = new int[size];
+14 this.top = -1;
+15 }
+16
+17 public void push(int pushedElement)
+18 {
+19 if (!isFull())
+20 {
+21 top++;
+22 arr[top] = pushedElement;
+23 System.out.println("Pushed element:" + pushedElement);
+24 }
+25 else
+26 {
+27 System.out.println("Stack is full !");
+28 }
+29 }
+30
+31 public int pop()
+32 {
+33 if (!isEmpty())
+34 {
+35 int returnedTop = top;
+36 top--;
+37 System.out.println("Popped element :" + arr[returnedTop]);
+38 return arr[returnedTop];
+39
+40 }
+41 else
+
+
+
+
+42 {
+43 System.out.println("Stack is empty !");
+44 return -1;
+45 }
+46 }
+47
+48 public boolean isEmpty()
+49 {
+50 return (top == -1);
+51 }
+52
+53 public boolean isFull()
+54 {
+55 return (size - 1 == top);
+56 }
+57
+58 public static void main(String[] args)
+59 {
+60 Stacks Stacks = new Stacks(10);
+61 Stacks.pop();
+62 System.out.println("\n");
+63
+64 Stacks.push(80);
+65 Stacks.push(90);
+66 Stacks.push(59);
+67 System.out.println("\n");
+68
+69 Stacks.pop();
+70 Stacks.pop();
+71 Stacks.pop();
+72 System.out.println("\n");
+73 }
+74 }
+75

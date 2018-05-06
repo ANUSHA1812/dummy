@@ -1,0 +1,34 @@
+
+                          Grade.java
+
+Name:Nikunj Agarwal
+Sec:B
+Roll no.:34
+
+
+1 package geu;
+2
+3 public class Grade
+4 {
+5 int s1;
+6 int s2;
+7 int s3;
+8
+9 public Grade(int s1, int s2, int s3)
+10 {
+11 super();
+12 this.s1 = s1;
+13 this.s2 = s2;
+14 this.s3 = s3;
+15 }
+16
+17 void display()
+18 {
+19 System.out.println("marks in First subject"+s1);
+20 System.out.println("marks in Second subject"+s2);
+21 System.out.println("marks in Third subject"+s3);
+22 }
+23 }
+24
+25
+26

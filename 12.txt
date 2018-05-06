@@ -1,0 +1,40 @@
+
+                             Drivers.java
+
+Name:Nikunj Agarwal
+Sec:B
+Roll no.:34
+
+
+1 package geu;
+2
+3 public class Drivers extends Grade implements Interface {
+4
+5 public Drivers(int s1, int s2, int s3)
+6 {
+7 super(s1, s2, s3);
+8 }
+9
+10 public double percentage()
+11 {
+12 double per=(s1+s2+s3)/3;
+13 return per;
+14 }
+15 public char grades()
+16 {
+17 char grade;
+18 if(percentage()>=85)
+19 {
+20 grade='A';
+21 }
+22 else if(percentage()>=75 && percentage()<85)
+23 {
+24 grade='B';
+25 }
+26 else
+27 {
+28 grade='C';
+29 }
+30 return grade;
+31 }
+32 }

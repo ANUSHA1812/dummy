@@ -1,0 +1,30 @@
+                           Thread1.java
+Name:Nikunj Agarwal
+Sec:B
+Roll no.:34
+ 
+1 package geu; 
+2 
+3 class Threads implements Runnable 
+4 { 
+5 public void run() 
+6 { 
+7 try 
+8 { 
+9 System.out.println ("Thread " +Thread.currentThread().getId() + " is running"); 
+10 } 
+11 catch (Exception e) 
+12 { 
+13 System.out.println ("Exception is caught"); 
+14 } 
+15 } 
+16 public static void main(String[] args) 
+17 { 
+18 
+19 for (int i=0; i<10; i++) 
+20 { 
+21 Thread object = new Thread(new Thread()); 
+22 object.start(); 
+23 } 
+24 } 
+25 } 

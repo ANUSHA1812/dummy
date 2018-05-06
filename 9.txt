@@ -1,0 +1,37 @@
+                                 Demo.java
+
+Name:Nikunj Agarwal
+Sec:B
+Roll no.:34
+
+1 package geu;
+2
+3 public class Demo
+4 {
+5 public static void main(String [] args)
+6 {
+7 int num1,num2,n1,n2,hcf,lcm,temp;
+8 num1 = Integer.parseInt(args[0]);
+9 num2 = Integer.parseInt(args[1]);
+10
+11 System.out.println("\nNumber are:"+num1+" | "+num2);
+12
+13 n1 = num1;
+14 n2 = num2;
+15
+16 while(n2 != 0)
+17 {
+18 temp = n2;
+19 n2 = n1%n2;
+20 n1 = temp;
+21 }
+22
+23 hcf = n1;
+24 lcm = (num1*num2)/hcf;
+25
+26 System.out.println("\nHCF is: "+hcf);
+27 System.out.println("\nLCM is: "+lcm);
+28 System.out.println("\n");
+29 }
+30 }
+31

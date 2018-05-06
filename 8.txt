@@ -1,0 +1,28 @@
+                             Count.java
+
+Name:Nikunj Agarwal
+Sec:B
+Roll no.:34
+
+1 package geu;
+2
+3 public class Count
+4 {
+5 static int counter = 0;
+6 Count()
+7 {
+8 counter++;
+9 }
+10
+11 public static void main(String [] args)
+12 {
+13 Count ob1 = new Count();
+14 Count ob2 = new Count();
+15 Count ob3 = new Count();
+16 Count ob4 = new Count();
+17 Count ob5 = new Count();
+18 Count ob6 = new Count();
+19 System.out.println("Number of object created of a class is: "+counter);
+20 }
+21 }
+22

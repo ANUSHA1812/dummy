@@ -1,0 +1,31 @@
+                           Concat.java
+Name:Nikunj Agarwal
+Sec:B
+Roll no.:34
+
+1 package geu;
+2
+3 public class Concat
+4 {
+5 public static void concat1(String s1)
+6 {
+7 s1 = s1 + "Technology";
+8 }
+9
+10 public static void concat2(StringBuffer s2)
+11 {
+12 s2.append(" Class in Java");
+13 }
+14
+15 public static void main(String[] args)
+16 {
+17 String s1 = "java";
+18 concat1(s1);
+19 System.out.println("String: " + s1);
+20
+21 StringBuffer s2 = new StringBuffer(" Buffer");
+22 concat2(s2);
+23 System.out.println("StringBuffer: " + s2);
+24 }
+25 }
+26

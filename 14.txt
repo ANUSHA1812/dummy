@@ -1,0 +1,31 @@
+
+                             Employees.java
+
+Name:Nikunj Agarwal
+Sec:B
+Roll no.:34
+
+
+1 package geu;
+2
+3 public class Employees
+4 {
+5 int empId;
+6 String name;
+7 int salary;
+8
+9 public Employees(int empId, String name, int salary)
+10 {
+11 this.empId = empId;
+12 this.name = name;
+13 this.salary = salary;
+14 }
+15
+16 void display()
+17 {
+18 System.out.println("\nempid : "+empId);
+19 System.out.println("name : "+name);
+20 System.out.println("salary : "+salary);
+21 }
+22 }
+23

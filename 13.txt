@@ -1,0 +1,44 @@
+
+                          Employee.java
+
+Name:Nikunj Agarwal
+Sec:B
+Roll no.:34
+
+1 package geu;
+2
+3 import java.util.Scanner;
+4
+5 public class Employee
+6 {
+7 Scanner sc = new Scanner(System.in);
+8 int emp_id, project_id,salary;
+9 String name;
+10
+11 Employee(int emp_id,int project_id,int salary,String name)
+12 {
+13 this.emp_id = emp_id;
+14 this.project_id = project_id;
+15 this.salary = salary;
+16 this.name = name;
+17 System.out.println("Emplyee_id is: "+emp_id+", Project_id is: "+project_id+", Salary
+is: "+salary+", Name is:"+name);
+18 }
+19
+20 void calcSal()
+21 {
+22 int Sal,TS=0;
+23 System.out.println("\nEnter the salary of a month of the employee: ");
+24 Sal = sc.nextInt();
+25
+26 TS = Sal*12;
+27 System.out.println("\nTotal Annual salary is: "+TS);
+28 }
+29
+30 public static void main(String [] args)
+31 {
+32 System.out.println("Final Output");
+33 Employee obj = new Employee(121,13431,4000000,"Alice");
+34 obj.calcSal();
+35 }
+36 }

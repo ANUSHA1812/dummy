@@ -1,0 +1,29 @@
+
+                             Manager.java
+
+Name:Nikunj Agarwal
+Sec:B
+Roll no.:34
+
+
+
+1 package geu;
+2
+3 public class Manager extends Employees
+4 {
+5 int managerId;
+6 String managerLocation;
+7 public Manager(int empId, String name, int salary,int managerId, String managerLocation)
+8 {
+9 super(empId, name, salary);
+10 this.managerId=managerId;
+11 this.managerLocation=managerLocation;
+12 }
+13
+14 void print()
+15 {
+16 System.out.println("\nManagerId : "+managerId);
+17 System.out.println("managerLocation : "+managerLocation);
+18
+19 }
+20 }

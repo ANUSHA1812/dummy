@@ -1,0 +1,35 @@
+
+                        Thread2.java
+
+Name:Nikunj Agarwal
+Sec:b
+Roll no.34
+ 
+1 package geu; 
+2 
+3 class Thread2 extends Thread 
+4 { 
+5 public void run() 
+6 { 
+7 try 
+8 { 
+9 System.out.println ("Thread " + Thread.currentThread().getId() + " is running"); 
+10 } 
+11 catch (Exception e) 
+12 { 
+13 System.out.println ("Exception is caught"); 
+14 } 
+15 } 
+16 public static void main(String[] args) 
+17 { 
+18 for (int i=0; i<10; i++) 
+19 { 
+20 Thread2 object = new Thread2(); 
+21 object.start(); 
+22 } 
+23 } 
+24 } 
+25 
+26 
+27 
+28 

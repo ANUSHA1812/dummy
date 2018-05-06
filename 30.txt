@@ -1,0 +1,77 @@
+
+
+                                                                         Application.java
+Name:Nikunj Agarwal
+Sec:B
+Roll no.:34
+  
+1 package geu; 
+2 
+3 import java.util.Scanner; 
+4 
+5 @SuppressWarnings("serial") 
+6 public class Application extends Exception { 
+7 
+8 public Application(String string) 
+9 { 
+10 System.out.println(string); 
+11 } 
+12 
+13 public static void main(String[] args) 
+14 { 
+15 String name = null; 
+16 String empid=null; 
+17 String depId=null; 
+18 int i=0; 
+19 @SuppressWarnings("resource") 
+20 Scanner sc=new Scanner(System.in); 
+21 try 
+22 { 
+23 System.out.println("Enter Your name"); 
+24 name=sc.nextLine(); 
+25 for(i=0;i<name.length();i++) 
+26 { 
+27 if(!(Character.isAlphabetic(name.charAt(i)) || (name.charAt(i)==' '))) 
+28 throw new Application("Only alphabets are allowed"); 
+29 } 
+30 
+
+
+
+
+
+
+
+31 System.out.println("Enter empId"); 
+32 empid=sc.nextLine(); 
+33 for(i=0;i<empid.length();i++) 
+34 { 
+35 if(!(Character.isDigit((empid.charAt(i))))) 
+36 throw new Application("Only Integers are allowed"); 
+37 } 
+38 System.out.println("Enter depId"); 
+39 depId=sc.nextLine(); 
+40 for(i=0;i<empid.length();i++) 
+41 { 
+42 if(!(Character.isDigit((empid.charAt(i)))) && !(empid.length()>=0 && 
+empid.length()<=5)) 
+43 throw new Application("Only Integers Are Allowed"); 
+44 } 
+45 System.out.println("You Have entered following data--"); 
+46 System.out.println("Name : "+name); 
+47 System.out.println("Empid : "+empid); 
+48 System.out.println("DepId : "+depId); 
+49 
+50 } 
+51 catch(Exception e) 
+52 { 
+53 System.out.println(e.getMessage()); 
+54 } 
+55 finally 
+56 { 
+57 
+58 System.out.println("Program executed!."); 
+59 } 
+60 
+61 } 
+62 } 

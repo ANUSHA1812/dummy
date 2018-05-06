@@ -1,0 +1,48 @@
+                        Area.java
+
+Name:Nikunj Agarwal
+Sec:B
+Roll no.:34
+
+
+1 package geu;
+2
+3 import java.util.Scanner;
+5
+6 public class Area
+7 {
+8 public static void main(String [] args)
+9 {
+10 int s1,s2,s3,peri = 0,valid=0,S;
+11 double area = 0 ;
+12 Scanner sc = new Scanner(System.in);
+13 System.out.println("\n Enter the three sides of the triangle: ");
+14
+15 s1 = sc.nextInt();
+16 s2 = sc.nextInt();
+17 s3 = sc.nextInt();
+18
+19 if((s1+s2) > s3)
+20 {
+21 if((s2+s3) > s1)
+22 {
+23 if((s1+s3) > s2)
+24 {
+25 valid = 1;
+26 }
+27 }
+28 }
+29
+30 if(valid == 1)
+31 {
+32 peri = s1+s2+s3;
+33 S = peri/2;
+34 area = sqrt((S*(S-s1)*(S-s2)*(S-s3)));
+35 }
+36
+37 System.out.println("\nArea of triangle is: " + area);
+38 System.out.println("\nPerimeter of triangle is: " + peri);
+39 sc.close();
+40 }
+41 }
+42

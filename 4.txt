@@ -1,0 +1,90 @@
+                               Case.java
+
+Name:Nikunj Agarwal
+Sec:B
+Roll no.:34
+
+1 package geu;
+2
+3 import java.io.BufferedReader;
+6
+7 public class Case
+8 {
+9 public static void main(String[] args)
+10 {
+11 int
+upperCaseCounter=0,lowerCaseCounter=0,digitCounter=0,whiteSpaceCounter=0,specialCounter=0;
+12
+13 try
+14 {
+15 BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+16
+17 System.out.println("enter the string");
+18 String str=br.readLine();
+19
+20 for(int i=0;i<str.length();i++)
+21 {
+22 char ch=str.charAt(i);
+23 if(Character.isAlphabetic(ch))
+24 {
+25 if(Character.isUpperCase(ch))
+26 {
+27 upperCaseCounter+=1;
+28 }
+29 else
+30 {
+31 lowerCaseCounter+=1;
+32 }
+33 }
+34 else if(Character.isDigit(ch))
+35 {
+36 digitCounter+=1;
+37 }
+38 else
+39 {
+40 if(Character.isWhitespace(ch))
+41 {
+42 whiteSpaceCounter+=1;
+
+
+
+
+43 }
+44 else
+45 {
+46 specialCounter+=1;
+47 }
+48 }
+49 }
+50 char[] chars = str.toCharArray();
+51 for (int i = 0; i < chars.length; i++)
+52 {
+53 char c = chars[i];
+54 if (Character.isUpperCase(c))
+55 {
+56 chars[i] = Character.toLowerCase(c);
+57 }                                                                                 
+58 else if (Character.isLowerCase(c))
+59 {
+60 chars[i] = Character.toUpperCase(c);
+61 }
+62 }
+63
+64 System.out.println("number of uppercase letter: "+upperCaseCounter);
+65 System.out.println("number of lowercase letter: "+lowerCaseCounter);
+66 System.out.println("number of digits: "+digitCounter);
+67 System.out.println("number of white Spaces: "+whiteSpaceCounter);
+68 System.out.println("number of special characters: "+specialCounter);
+69 System.out.println("Converted case: ");
+70 for(int i=0;i<chars.length;i++)
+71 {
+72 System.out.print(chars[i]);
+73 }
+74 }
+75 catch(IOException e)
+76 {
+77 System.out.println("error in input.");
+78 }
+79 }
+80 }
+81
