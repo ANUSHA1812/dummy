@@ -1,7 +1,9 @@
                           Array.java
+/*
 Name:Nikunj Agarwal
 Sec:B
 Roll no.:34
+*/
 
 1 package geu;
 3 import java.util.Scanner;
